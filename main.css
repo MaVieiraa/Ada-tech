@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(153, 22, 88);
+    --secondary-color: rgb(192, 219, 255);
+    --font-color:#36393b;
+    --background-color: #fafdff;
+}
+
+.emphasis {
+    color: var(--secondary-color);
+    
+}
+
+.name, .home {
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: "Noto Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    
+    button {
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.90;
+        transition: background-color 0.3s ease;
+        padding: 5px 10px;
+    
+        &.primary {
+            background-color: var(--primary-color);
+            color: #fff;
+            
+        }
+
+        &.outline {
+            background-color: var(--primary-color);   
+            color: #fff;
+        }
+
+        &:hover {
+            background-color: var(--secondary-color);
+            border-color: #070205;
+            color: var(--font-color);
+
+        }
+    }
+    
+    .perfil {
+        width: 80%;   
+    }
+  
+header {
+    /* topo da pagina */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+
+    nav{
+        font-size: 1.125rem;
+        flex: 1;  
+        
+        ul {
+            display: flex;
+            gap: 1.25rem;
+            justify-content: center;
+            cursor: pointer;
+            list-style: none;
+        
+        li {
+            font-weight: 500;
+            &:hover {
+            color: var(--primary-color);
+            }
+        }
+        }
+      
+    }
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-items: flex-end;
+    padding: 40px;
+    margin-top: 30px;
+   
+    article {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+ 
+    >p {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    .title{
+        color: var(--primary-color);
+        font-size: 5.5rem;
+        font-weight: bolder;
+        line-height: 3.5rem;
+    }
+    }
+
+    .frame {
+        align-items: center;
+        border: 1px solid var(--primary-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        width: 420px;
+        height: 420px; 
+        }
+    }
+
+
+  h1 {
+        padding: 40px; 
+        font-weight: 800;
+        font-size: 3.25rem;
+    }
+
+    .foto{
+    padding: 40px;
+    border-radius: 15%;
+    width: 50%;
+  
+}
+
+}
+
+
+

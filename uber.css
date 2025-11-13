@@ -1,0 +1,159 @@
+:root {
+    --primary-color: rgb(53, 233, 30);
+    --secondary-color: rgb(151, 18, 18);
+    --font-color:#ffffff;
+    --background-color: #fff;
+}
+
+body {
+    background-image: url("/imagens/image.fundo.png");
+    background-color: var(--background-color);
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+     
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: rgba(82, 81, 81, 0.247);
+    border-radius: 20px;
+  
+}
+
+.emphasis {
+    display: flex;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.25rem; 
+}
+
+.btnfixed {
+    background-color: var(--secondary-color);
+    color: #fff;  
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.botao {  
+    color: #fff;  
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s ease;
+    margin: 10px;
+    
+}
+
+.botao:hover {
+    background-color: #ffffff34;
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    list-style: none;
+    }
+
+
+#hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    gap: 1rem;
+    min-height: 80vh;
+    align-items: flex-start;
+    justify-items: flex-end;
+
+}
+
+    section{
+        flex: 1;
+        display: flex;
+        flex-direction: column; 
+        gap: 2rem;
+        justify-content: center;
+    }
+
+.text1 {
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 3.5rem;
+   text-align: start;
+   padding: 30px;
+   margin-top: 5rem;
+}
+
+p {
+        line-height: 1.5rem;
+        font-size: 1.6rem;
+        margin
+    }
+
+.formulario {
+    align-items: flex-end;
+    padding: 30px;
+}
+
+form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background-color: rgba(0, 0, 0,0.4);
+        padding: 20px 50px;
+        border-radius: 12px;
+        max-width: 350px;
+    
+    }
+
+    label {
+        display: block;
+        color: #fff;
+        font-size: 1rem;
+        width: 100%;
+        text-align: start;
+       
+    }
+
+    input {
+       
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+    }
+
+    input::placeholder {
+        color: var(--secondary-color);
+    }
+
+button {
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    padding: 0.30rem;
+    background-color: var(--secondary-color);
+    justify-content: center;
+   
+}
+
+button:hover{
+    background-color: var(--primary-color);
+}
+
