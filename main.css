@@ -100,25 +100,25 @@ header {
     padding: 40px;
     margin-top: 30px;
    
-    article {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
+article {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
  
-    >p {
+>p {
         font-size: 1.5rem;
         line-height: 1.8rem;
-    }
+}
 
-    .title{
+.title{
         color: var(--primary-color);
         font-size: 5.5rem;
         font-weight: bolder;
         line-height: 3.5rem;
-    }
-    }
+ }
+}
 
     .frame {
         align-items: center;
@@ -132,13 +132,13 @@ header {
     }
 
 
-  h1 {
+h1 {
         padding: 40px; 
         font-weight: 800;
         font-size: 3.25rem;
-    }
+}
 
-    .foto{
+.foto{
     padding: 40px;
     border-radius: 15%;
     width: 50%;
