@@ -5,10 +5,15 @@
 }
 
 :root {
-    --primary-color: rgb(153, 22, 88);
+    --primary-color: rgb(224, 121, 173);
     --secondary-color: rgb(192, 219, 255);
-    --font-color:#36393b;
+    --font-color:#494a4b;
+    --font-color2: #777677;
     --background-color: #fafdff;
+}
+
+.font-ligth {
+    color: var(--font-color2);
 }
 
 .emphasis {
@@ -17,8 +22,8 @@
 }
 
 .name, .home {
-    font-size: 25px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 700;
     text-decoration: none;
     color: inherit;
 }
@@ -27,8 +32,8 @@ body {
     background-color: var(--background-color);
     color: var(--font-color);
     font-family: "Noto Sans", sans-serif;
-    font-size: 19px;
-    font-weight: 400;
+    font-size: 20px;
+   
     
     button {
         border: none;
@@ -59,9 +64,6 @@ body {
         }
     }
     
-    .perfil {
-        width: 80%;   
-    }
   
 header {
     /* topo da pagina */
@@ -71,7 +73,7 @@ header {
     padding: 30px 40px;
 
     nav{
-        font-size: 1.125rem;
+        font-size: 1rem;
         flex: 1;  
         
         ul {
@@ -82,7 +84,7 @@ header {
             list-style: none;
         
         li {
-            font-weight: 500;
+            font-weight: 300;
             &:hover {
             color: var(--primary-color);
             }
@@ -93,12 +95,13 @@ header {
 }
 
 #hero {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
-    justify-items: flex-end;
+    justify-items: center;
     padding: 40px;
-    margin-top: 30px;
+    gap: 15rem;
+
    
 article {
     display: flex;
@@ -126,26 +129,58 @@ article {
         border-radius: 50%;
         display: flex;
         justify-content: center;
-        width: 420px;
-        height: 420px; 
+        width: 400px;
+        height: 400px; 
+        overflow: hidden;
         }
+    
+    .perfil {
+        width: 85%;
+        height: 85%;
+        object-fit: cover;
+        object-position: 50% 20%; 
     }
 
+}
 
-h1 {
-        padding: 40px; 
+#projetos {
+    padding: 40px;
+
+    
+ h1 {
         font-weight: 800;
         font-size: 3.25rem;
 }
-
 .foto{
     padding: 40px;
     border-radius: 15%;
     width: 50%;
   
 }
+}
+
+
+
+/* pagina 2 */
+.secondary-page {
+    
+    padding: 40px;
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        font-weight: 600;
+    }
+}
 
 }
+
+
+
 
 
 
