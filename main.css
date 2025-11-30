@@ -7,8 +7,8 @@
 :root {
     --primary-color: rgb(224, 121, 173);
     --secondary-color: rgb(192, 219, 255);
-    --font-color:#494a4b;
-    --font-color2: #777677;
+    --font-color:#373838;
+    --font-color2: #696869;
     --background-color: #fafdff;
 }
 
@@ -164,7 +164,7 @@ article {
 /* pagina 2 */
 .secondary-page {
     
-    padding: 40px;
+    padding: 50px;
 
     h1 {
         font-size: 5rem;
@@ -174,6 +174,11 @@ article {
         font-size: 1.5rem;
         line-height: 1.8rem;
         font-weight: 600;
+        
+    }
+
+    .styletext {
+        font-size: 3rem;
     }
 }
 
